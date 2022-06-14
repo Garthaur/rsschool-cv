@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+body{
+  background-color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+@font-face {
+     font-family:Cyberpunk-Regular;
+     src: url("../assests/fonts/Cyberpunk-Regular.ttf");
+   }
+
+   @font-face {
+     font-family:Slant;
+     src: url("../assests/fonts/SLANT.TTF");
+   }
+
+   @font-face {
+     font-family:Blender-Pro-Book;
+     src: url("../assests/fonts/Blender-Pro-Book.otf");
+   }
+
+   @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+   
+
+.container {
+    position: relative;
+    padding: 30px 190px;
+    max-width: 1140px;
+    margin: 0 auto; 
+    background-color:#fcee0a;
+}
+
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap; 
+} 
+.section {
+    width: 50%;
+  }
+
+.header{
+    background-color:black;
+    padding: 20px;
+}
+
+
+.nav{
+  display: flex;
+  justify-content:end;
+  align-items: flex-end;
+    
+}
+
+.nav .nav-list{
+    display: flex;
+    justify-content:end;
+    align-items: flex-end;
+    list-style: none;
+    width: 750px;
+    background-color:#fcee0a;
+    
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+    color: 	black;
+    text-decoration: none;  
+    transition: color 1s;
+    font-family: Slant, sans-serif;
+    font-size: 20px;
+  }
+  .nav-link:hover {
+    color: 	#00f0ff;
+  }
+
+  /*------main-------------------------------------------------------------------------------*/
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+  .section-area{
+    width: 300px;
+  
+    min-height: 240px;
+    background-color:black;
+    margin-top: 40px;
+    padding: 10px ;
+    box-shadow: 10px 10px #00f0ff ;
+  }
+
+  .line{
+    width: 280px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background: #fcee0a;
+} 
+  
+.intro-line{
+  width: 280px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background: black;
+}
+
+  .section-area .section-name{
+        font-family:Cyberpunk-Regular ;
+        font-weight: 300;
+        font-size: 30px;
+        margin:10px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #00f0ff;  
+  }
+
+  .section-area .section-title {
+      font-family:Slant ;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #00f0ff;  
+      margin-top: 10px; 
+      
+  }
+
+  .avatar{
+      margin-top: 40px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      
+      border: 5px solid black;
+      box-shadow: 0 0 5px 5px #00f0ff ;
+  }
+
+  
+
+  .section-area .section-descr{
+      font-family:Blender-Pro-Book ;
+      font-weight: 300;
+      font-size: 20px;
+      margin: 0 auto;
+      text-align: center;
+  
+      text-transform: uppercase;
+      color: #00f0ff;  
+
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .section-link{
+    margin: 0 auto;;
+    line-height: 50px;
+    transition: .3s;
+    color: 	#fcee0a;
+    text-decoration: none;  
+    transition: color 1s;
+    font-family: Slant, sans-serif;
+    font-size: 20px;
+  }
+  .section-link:hover {
+    color: 	#00f0ff;
+  }
+
+  .pre{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+  background-color:black;
+  margin-top: 20px;
+}
+
+.footer .footer-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 20px;
+  color: black; 
+  background-color: #fcee0a;
+}
+
+
+
+.git-section-link{
+  margin: 0 auto;;
+    line-height: 50px;
+    transition: .3s;
+    color: 	black;
+  text-decoration: none;  
+  transition: color 1s;
+  font-family: Slant, sans-serif;
+  font-size: 20px;
+  }
+  .git-section-link:hover {
+    color: 	#00f0ff;
+  }
+
+  .gif{
+    border: 10px solid black;
+    box-shadow: 10px 10px #00f0ff ;
+    width: 300px;
+    height: 240px;
+    margin-top: 40px;
+  }
+
+  .rss {
+    width: 200px;
+    height: 45px;
+    background-image: url(../assests/svg/rss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .date{
+     font-family:Slant ;  
+      font-size: 20px;
+      line-height: 30px;
+      color: black;   
+  }
